@@ -20,17 +20,20 @@ export const TOKENLOCK_ADDRESS = {
 export const LIQUIDITYLOCK_ADDRESS = {
   eth: '0x78b06B8096A471CABfCF189beFb24A134FE2E88C',
   bsc: '0xdb78C45F1C11382962a95e6e27d306015634Aa5b',
+  mtr:'0x444519c7eed16afbe19d38277dd3b0de7fbc9985'
 };
 
 //0xeBcF02B5eD0C8694d994A1D3E974d4a0087d8F2f
 export const PRESALE_MANAGE_ADDRESS = {
   eth: '0x3b09f46D4716bB7d6a08315C91158aFE27618830',
   bsc: '0x1376C5b77a8Bbf757De61F5B72F528BaE5B5eF32',
+  mtr:'0x444519c7eed16afbe19d38277dd3b0de7fbc9985'
 };
 
 export const CREATE_TOKEN_MANAGE_ADDRESS = {
   eth: '0xC19A09597C4D313fb01Df54fCb1D8B329cDEB379',
   bsc: '0x1c9C08c84074f4957EF0D9F3360d623460a7B22B',
+  mtr:'0x444519c7eed16afbe19d38277dd3b0de7fbc9985'
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////

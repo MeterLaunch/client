@@ -124,7 +124,7 @@ export default function CreateTokenMain() {
     pause: 'NAN',
     blacklist: 'NAN',
     deflation: 'NAN',
-    curfee: 'NAN',
+    curfee: '0',
   });
 
   const ErrorDlgShow = (flag, alertstr) => {
@@ -160,8 +160,11 @@ export default function CreateTokenMain() {
     } else if (library._network.chainId === 97) {
       setCoin('BNB');
       managecontractAddr = CREATE_TOKEN_MANAGE_ADDRESS.bsc;
+    } else if (library._network.chainId === 82) {
+      setCoin('MTR');
+      managecontractAddr = CREATE_TOKEN_MANAGE_ADDRESS.mtr;
     }
-
+    console.log(managecontractAddr,"managecontractAddr");
     if (account !== undefined) {
       // getFee();
       return;
@@ -188,6 +191,9 @@ export default function CreateTokenMain() {
     } else if (library._network.chainId === 97) {
       setCoin('BNB');
       managecontractAddr = CREATE_TOKEN_MANAGE_ADDRESS.bsc;
+    } else if (library._network.chainId === 82) {
+      setCoin('BNB');
+      managecontractAddr = CREATE_TOKEN_MANAGE_ADDRESS.mtr;
     }
 
     if (!account) {
@@ -279,7 +285,7 @@ export default function CreateTokenMain() {
       ProgressDlgShow(false, '');
       return;
     }
-
+    console.log("feeInfo",feeInfo)
     let overrid = {
       value: ethers.utils.parseUnits(feeInfo.curfee, 18),
     };
@@ -392,7 +398,7 @@ export default function CreateTokenMain() {
     }
 
     manage_contract = await CreateManageContract();
-
+    console.log(manage_contract,"manage_contract");
     if (!manage_contract) {
       ErrorDlgShow(true, 'manage contract connect error');
       ProgressDlgShow(false, '');
@@ -403,6 +409,8 @@ export default function CreateTokenMain() {
 
     try {
       fee = await manage_contract.fee();
+      console.log(fee,"fee");
+
       // console.log("fee",fee);
     } catch (error) {
       console.log(error);

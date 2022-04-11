@@ -45,7 +45,7 @@ const netlist = [
     chainnetname: 'RPS',
     chainsymbol: 'MTR',
     chaindecimals: 18,
-  },
+  }
 ];
 
 const defaultRopstenconfig = {
