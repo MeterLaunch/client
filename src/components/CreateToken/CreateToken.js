@@ -505,16 +505,16 @@ export default function CreateToken(props) {
           </GridItem> */}
 
           <GridItem xs={12} sm={12} md={12}>
-            <TextField id="tokenname" label="Name" variant="outlined" />
+            <TextField fullWidth id="tokenname" label="Name" variant="outlined" />
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
-            <TextField id="tokensymbol" label="Symbol" variant="outlined" />
+            <TextField fullWidth id="tokensymbol" label="Symbol" variant="outlined" />
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
-            <TextField id="tokendecimal" label="decimal" type="number" variant="outlined" />
+            <TextField fullWidth id="tokendecimal" label="decimal" type="number" variant="outlined" />
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
-            <TextField id="totalsupply" label="Total Supply" type="number" variant="outlined" />
+            <TextField fullWidth id="totalsupply" label="Total Supply" type="number" variant="outlined" />
           </GridItem>
         </GridContainer>
 

@@ -22,6 +22,7 @@ import LiquidityLock from './views/LiquidityLock/LiquidityLock.js';
 import Farm from './views/Farm/Farm.js';
 import Staking from './views/Staking/Staking.js';
 import CreateToken from './views/CreateToken/CreateToken.js';
+import Governance from './views/Governance/Governance.js';
 // core components/./views for RTL layout
 import RTLPage from './views/RTLPage/RTLPage.js';
 import { LaunchOutlined, LockOutlined, LockTwoTone, MoneyOutlined } from '@material-ui/icons';
@@ -85,21 +86,21 @@ const dashboardRoutes = [
     layout: '/client',
   },
   {
-    path: '/governance',
+    path: '/daolist',
     name: 'DAO List',
     rtlName: 'التطور للاحترافية',
     icon: LaunchOutlined,
     component: LiquidityLock,
     layout: '/client',
   },
-  {
-    path: '/multisignature',
-    name: 'Multi-signature',
-    rtlName: 'التطور للاحترافية',
-    icon: EcoIcon,
-    component: LiquidityLock,
-    layout: '/client',
-  },
+  // {
+  //   path: '/multisignature',
+  //   name: 'Multi-signature',
+  //   rtlName: 'التطور للاحترافية',
+  //   icon: EcoIcon,
+  //   component: LiquidityLock,
+  //   layout: '/client',
+  // },
   // {
   //   path: "/dashboard",
   //   name: "Dashboard",

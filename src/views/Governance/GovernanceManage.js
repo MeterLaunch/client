@@ -35,7 +35,7 @@ let contractAddr = TOKENLOCK_ADDRESS.eth; //Metamask
 const useStyles = makeStyles(styles);
 let decimals, balance, available, lockedamount, accountbalance;
 
-export default function Governance() {
+export default function GovernanceManage() {
   const classes = useStyles();
 
   const [progressflag, setProgressFlag] = useState(false);
